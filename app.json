@@ -4,8 +4,9 @@
     "slug": "tellme",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
+    "icon": "./assets/play_store_512.png",
     "userInterfaceStyle": "light",
+    "scheme": "Tellme",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -16,12 +17,23 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/play_store_512.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE"
+      ],
+      "package": "com.juanjose02.tellme"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3946a7b6-f107-4132-b44b-d977c6e09a9b"
+      }
     }
   }
 }

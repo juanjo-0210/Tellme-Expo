@@ -5,12 +5,14 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StackNavigation } from './src/routes/StackNavigation';
 import { LoginScreen } from './src/screens/auth/LoginScreen';
 import {RegisterScreen} from './src/screens/profile/RegisterScreen';
+import { ProfileScreen } from './src/screens/profile/ProfileScreen';
 
 export default function App() {
   return (
     <NavigationContainer>
       
-      <StackNavigation />
+      {/* <StackNavigation /> */}
+      <ProfileScreen />
    
     </NavigationContainer>
     

@@ -22,7 +22,3 @@ export const getNewMessage = (calback: any, userUid: string, chatId: string) => 
   }
 };
 
-
-const sendNotification = () => {
-  
-}

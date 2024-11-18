@@ -6,7 +6,6 @@ import PhoneInput from 'react-native-international-phone-number';
 import { useUserStore } from '../../context/useUserStore';
 import {type RootStackParamsList } from '../../routes/StackNavigation';
 import { type StackNavigationProp } from '@react-navigation/stack';
-import { setLoginPhoneNumberError } from '../../service/error/setLoginPhoneNumberError';
 
 export const LoginScreen = () => {
   const navigation = useNavigation<StackNavigationProp<RootStackParamsList>>()
@@ -22,7 +21,7 @@ export const LoginScreen = () => {
   const [letRender,setLetRender] = useState(false)
   const [error, setError] = useState("")
   const [code,setCode] = useState("")
-  // Función para solicitar verificación de número de teléfono
+  
   const signInWithPhoneNumber = async () => {
     const phone = (region?.callingCode+phoneNumber).replaceAll(" ","")
     try {
@@ -34,7 +33,6 @@ export const LoginScreen = () => {
     }
   };
 
-  // Función para confirmar el código
   const confirmCode = async () => {
     try {
       await confirm?.confirm(code);

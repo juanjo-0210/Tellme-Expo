@@ -116,8 +116,8 @@ android {
         applicationId 'com.juanjose02.tellme'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 6
-        versionName "2.1.0"
+        versionCode 7
+        versionName "2.1.1"
     }
     signingConfigs {
         debug {
